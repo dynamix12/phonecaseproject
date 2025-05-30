@@ -3,3 +3,4 @@ ignoredBuiltDependencies:
   - unrs-resolver
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
+  - msgpackr-extract
