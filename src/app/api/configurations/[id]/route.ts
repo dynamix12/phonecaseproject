@@ -1,17 +1,14 @@
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import { db } from "@/db";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-
 export async function GET(
-  request: NextRequest,
-  context: { params: { id: string } }
+  request: Request,
+  { params }: { params: { id: string } }
 ) {
   try {
     const configuration = await db.configuration.findUnique({
       where: {
-        id: context.params.id,
+        id: params.id,
       },
     });
 

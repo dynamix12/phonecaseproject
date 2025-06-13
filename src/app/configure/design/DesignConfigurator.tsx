@@ -135,7 +135,6 @@ const DesignConfigurator = ({
         description:
           "There was a problem saving your config, please try again later.",
       });
-      console.error(err);
     }
   }
 
