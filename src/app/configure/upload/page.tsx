@@ -112,6 +112,3 @@ const Page = () => {
 };
 
 export default Page;
-function useToast(): { toast: any } {
-  throw new Error("Function not implemented.");
-}
